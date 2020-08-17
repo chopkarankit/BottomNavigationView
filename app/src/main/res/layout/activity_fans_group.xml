@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FansGroup">
+
+    <ImageView
+        android:id="@+id/backf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_backarrow"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:clickable="true"
+        android:contentDescription="@string/backarrow"
+        app:tint="#000"
+        android:focusable="true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70dp"
+        android:text="Fans Group"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="70dp"
+        android:padding="15dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/fans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fans_group_i_joined"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/newhot"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/new_hot"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp">
+        </TextView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_love"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:contentDescription="@string/llov"
+        app:tint="#EA6490">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_not_joined_any_fan_groups_go_to_the_live_room"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginRight="100dp">
+    </TextView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:visible="true" />
+    <item
+        android:id="@+id/navigation_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:visible="true" />
+    <item
+        android:id="@+id/navigation_livevideo"
+        android:enabled="true"
+        android:icon="@drawable/ic_live"
+        android:visible="true" />
+    <item
+        android:id="@+id/navigation_video"
+        android:enabled="true"
+        android:icon="@drawable/ic_video"
+        android:visible="true" />
+    <item
+        android:id="@+id/navigation_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_account"
+        android:visible="true" />
+</menu>

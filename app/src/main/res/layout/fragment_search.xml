@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="@string/explore"
+            android:textColor="#EA6490"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/i"
+            android:src="@drawable/ic_message"
+            app:tint="@color/colorBlack">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/m"
+            android:src="@drawable/ic_notification"
+            app:tint="@color/colorBlack">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="53dp"
+        android:background="#8AE2ED" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/man3"
+            android:layout_marginTop="1dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/u87">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_host"
+            android:textColor="#9C27B0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        app:cardCornerRadius="13dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_sms"
+            android:contentDescription="@string/jh"
+            app:tint="#73BFE1">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chatr"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginStart="280dp"
+        app:cardCornerRadius="13dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_music"
+            android:contentDescription="@string/t54"
+            app:tint="#FF9800">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        android:background="#EAC8BD" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countries_amp_region3"
+        android:textColor="#EA6490"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:textSize="20sp"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginStart="340dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/indo"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/ind">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/vtem"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/vt">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/india"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/in">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/saudi"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/su">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indonsia"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vietnam"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/india"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saudi_arabia"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/malaysia"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/ind">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/phillppines"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/vt">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/thailand"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginStart="65dp"
+                    android:contentDescription="@string/in">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/turkey"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:contentDescription="@string/su">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/malaysia"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phillppines"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thailand"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turkey"
+                    android:textColor="#000"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="370dp"
+        android:background="#EAC8BD" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hot_live"
+        android:textSize="20sp"
+        android:textColor="#EA6490"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="373dp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    app:cardCornerRadius="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:src="@drawable/man1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/jh">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginStart="100dp"
+                    app:cardCornerRadius="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:src="@drawable/man2"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/jh">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    app:cardCornerRadius="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:src="@drawable/man3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/jh">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginStart="100dp"
+                    app:cardCornerRadius="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:src="@drawable/man4"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/jh">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
