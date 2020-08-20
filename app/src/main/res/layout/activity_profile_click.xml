@@ -34,6 +34,8 @@
         </ImageView>
 
         <ImageView
+            android:id="@+id/acbtoa"
+            android:clickable="true"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginStart="350dp"
@@ -41,7 +43,8 @@
             android:layout_marginTop="15dp"
             android:contentDescription="@string/m"
             android:src="@drawable/ic_account"
-            app:tint="@color/colorBlack">
+            app:tint="@color/colorBlack"
+            android:focusable="true">
         </ImageView>
 
         <View

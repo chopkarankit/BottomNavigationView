@@ -15,7 +15,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:text="@string/nearby"
-        android:textColor="#EA6490"
+        android:textColor="#E8467B"
         android:textSize="15sp"
         android:textStyle="bold">
     </TextView>
@@ -28,11 +28,11 @@
         android:layout_marginTop="10dp"
         android:text="@string/popular"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:textStyle="bold">
+        android:textSize="15sp">
     </TextView>
 
     <TextView
+        android:id="@+id/mg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="190dp"
@@ -40,30 +40,34 @@
         android:layout_marginTop="10dp"
         android:text="@string/multi_guest"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:textStyle="bold">
+        android:textSize="15sp">
     </TextView>
 
     <ImageView
+        android:id="@+id/sm"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginLeft="320dp"
+        android:layout_toRightOf="@id/mg"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/cg"
         android:src="@drawable/ic_chat"
-        app:tint="#000">
+        app:tint="#000"
+        android:layout_toEndOf="@id/mg"
+        android:layout_marginStart="50dp">
     </ImageView>
 
     <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginStart="360dp"
-        android:layout_marginLeft="360dp"
+        android:layout_toRightOf="@id/sm"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/nt"
         android:src="@drawable/ic_notification"
-        app:tint="#000">
+        app:tint="#000"
+        android:layout_toEndOf="@id/sm"
+        android:layout_marginStart="5dp">
     </ImageView>
 
     <View
@@ -73,6 +77,7 @@
         android:background="#EAC8BD" />
 
     <Button
+        android:id="@+id/recom"
         android:layout_width="110dp"
         android:layout_height="25dp"
         android:layout_marginStart="10dp"
@@ -81,47 +86,55 @@
         android:background="@drawable/custom_rou_corner"
         android:text="@string/recommend"
         android:textColor="#000"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:textStyle="bold">
     </Button>
 
     <Button
+        android:id="@+id/lw"
         android:layout_width="70dp"
         android:layout_height="25dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
+        android:layout_toRightOf="@id/recom"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_ro_corner1"
         android:text="@string/live"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:textStyle="bold">
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/recom"
+        android:layout_marginStart="10dp">
     </Button>
 
     <Button
+        android:id="@+id/br"
         android:layout_width="70dp"
         android:layout_height="25dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginLeft="230dp"
+        android:layout_toRightOf="@id/lw"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_ro_corner1"
         android:text="@string/bar"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:textStyle="bold">
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/lw"
+        android:layout_marginStart="10dp">
     </Button>
 
     <Button
         android:layout_width="80dp"
         android:layout_height="25dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginLeft="320dp"
+        android:layout_toRightOf="@id/br"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_ro_corner1"
         android:text="@string/people"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:textStyle="bold">
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/br"
+        android:layout_marginStart="10dp">
     </Button>
 
     <ScrollView
@@ -138,7 +151,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -168,6 +182,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0"
                             android:orientation="horizontal">
 
                             <TextView
@@ -207,7 +222,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
                             android:layout_marginTop="5dp"
                             android:orientation="horizontal">
 
@@ -219,9 +235,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/age"
-                                android:textColor="#000"
-                                android:textSize="15sp"
-                                android:textStyle="normal">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
@@ -232,20 +246,17 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/_1_km"
-                                android:textColor="#000"
-                                android:textSize="15sp">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
                                 style="?android:attr/buttonBarStyle"
                                 android:layout_width="110dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="80dp"
-                                android:layout_marginLeft="80dp"
+                                android:layout_height="20dp"
+                                android:layout_marginHorizontal="50dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/follow"
-                                android:textColor="#000"
-                                android:textSize="15sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold">
                             </Button>
                         </LinearLayout>
@@ -259,7 +270,7 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="300dp"
+                                android:layout_width="270dp"
                                 android:layout_height="80dp"
                                 android:layout_marginTop="10dp"
                                 app:cardCornerRadius="13dp">
@@ -343,7 +354,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -424,9 +436,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/age"
-                                android:textColor="#000"
-                                android:textSize="15sp"
-                                android:textStyle="normal">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
@@ -437,20 +447,18 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/_1_km"
-                                android:textColor="#000"
-                                android:textSize="15sp">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
                                 style="?android:attr/buttonBarStyle"
                                 android:layout_width="110dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="80dp"
-                                android:layout_marginLeft="80dp"
+                                android:layout_height="20dp"
+                                android:layout_marginHorizontal="50dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/follow"
                                 android:textColor="#000"
-                                android:textSize="15sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold">
                             </Button>
                         </LinearLayout>
@@ -464,7 +472,7 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="300dp"
+                                android:layout_width="270dp"
                                 android:layout_height="80dp"
                                 android:layout_marginTop="10dp"
                                 app:cardCornerRadius="13dp">
@@ -548,7 +556,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -617,7 +626,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
                             android:layout_marginTop="5dp"
                             android:orientation="horizontal">
 
@@ -629,9 +639,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/age"
-                                android:textColor="#000"
-                                android:textSize="15sp"
-                                android:textStyle="normal">
+                                android:textSize="15sp">
                             </Button>
 
                             <Button
@@ -642,20 +650,17 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/_1_km"
-                                android:textColor="#000"
-                                android:textSize="15sp">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
                                 style="?android:attr/buttonBarStyle"
                                 android:layout_width="110dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="80dp"
-                                android:layout_marginLeft="80dp"
+                                android:layout_height="20dp"
+                                android:layout_marginHorizontal="50dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/follow"
-                                android:textColor="#000"
-                                android:textSize="15sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold">
                             </Button>
                         </LinearLayout>
@@ -669,7 +674,7 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="300dp"
+                                android:layout_width="270dp"
                                 android:layout_height="80dp"
                                 android:layout_marginTop="10dp"
                                 app:cardCornerRadius="13dp">
@@ -753,7 +758,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -834,9 +840,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/age"
-                                android:textColor="#000"
-                                android:textSize="15sp"
-                                android:textStyle="normal">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
@@ -847,20 +851,18 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/_1_km"
-                                android:textColor="#000"
-                                android:textSize="15sp">
+                                android:textSize="12sp">
                             </Button>
 
                             <Button
                                 style="?android:attr/buttonBarStyle"
                                 android:layout_width="110dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="80dp"
-                                android:layout_marginLeft="80dp"
+                                android:layout_height="20dp"
+                                android:layout_marginHorizontal="50dp"
                                 android:background="@drawable/custom_rou_corner"
                                 android:text="@string/follow"
                                 android:textColor="#000"
-                                android:textSize="15sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold">
                             </Button>
                         </LinearLayout>
@@ -874,7 +876,7 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="300dp"
+                                android:layout_width="270dp"
                                 android:layout_height="80dp"
                                 android:layout_marginTop="10dp"
                                 app:cardCornerRadius="13dp">

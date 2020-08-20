@@ -40,19 +40,11 @@ public class HelpFeedback extends AppCompatActivity
         afg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HelpFeedback.this, BanandAppeal.class);
-                startActivity(i);
+                Intent intent = new Intent(HelpFeedback.this, BanandAppeal.class);
+                startActivity(intent);
             }
         });
 
-        TextView agff = findViewById(R.id.mqs);
-        agff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent inte = new Intent(HelpFeedback.this, MoreQuestions.class);
-                startActivity(inte);
-            }
-        });
 
         expandableListView = findViewById(R.id.expandableListView);
         expandableListDetail = ExpandableListDataPump.getData();
