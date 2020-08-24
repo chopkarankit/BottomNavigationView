@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopRank">
+
+    <LinearLayout
+        android:id="@+id/tpr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:tint="#000"
+            android:contentDescription="@string/todobtprr">
+        </ImageView>
+        
+        <LinearLayout
+            android:id="@+id/tpr2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/top_rank"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/india">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/global"
+            android:gravity="end"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tpr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/tpr1"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tpr4"
+            android:layout_width="300dp"
+            app:tabGravity="center"
+            android:layout_height="30dp"
+            android:background="@drawable/tab_layout_background"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabSelectedTextColor="#000"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/TabTextAppearance">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/beansGot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beans_got">
+            </com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/giftsSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gifts_sent">
+            </com.google.android.material.tabs.TabItem>
+
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tpr5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tpr3"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

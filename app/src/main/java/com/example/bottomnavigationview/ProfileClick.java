@@ -41,6 +41,25 @@ public class ProfileClick extends AppCompatActivity {
             }
         });
 
+        TextView sc = findViewById(R.id.liketex);
+        sc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileClick.this, LikeusPage.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView tr = findViewById(R.id.rankingtext);
+        tr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileClick.this, TopRank.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

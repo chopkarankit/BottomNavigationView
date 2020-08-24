@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".GoLiveScreen"></activity>
+        <activity android:name=".TopRank"></activity>
+        <activity android:name=".LikeusPage" />
+        <activity android:name=".GoLiveScreen" />
         <activity android:name=".QRcodeActivity" />
         <activity android:name=".HelpFeedback" />
         <activity android:name=".ProfileClick" />
@@ -32,7 +34,7 @@
             android:name=".CaptureActi"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>
