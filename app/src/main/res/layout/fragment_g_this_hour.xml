@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GThisHourFragment">
+
+    <LinearLayout
+        android:id="@+id/fgth"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <ImageView
+                    android:id="@+id/fgth1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/medal"
+                    android:contentDescription="@string/todosa">
+                </ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/man4"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#E91E63"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rajsdf"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/fgth2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/diamond"
+                        app:tint="#FFEB3B"
+                        android:contentDescription="@string/todoswexz">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fgth2"
+                        android:text="@string/_0123lzxc"
+                        android:layout_toEndOf="@id/fgth2">
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#939292"
+                    android:layout_marginTop="2dp">
+                </View>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginTop="3dp"
+                    app:tint="#E91E63"
+                    android:contentDescription="@string/todocvasd">
+                </ImageView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fgth3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/medal"
+                    android:contentDescription="@string/todosa">
+                </ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/man3"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#E91E63"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priyakasxdas"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/fgth4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/diamond"
+                        app:tint="#FFEB3B"
+                        android:contentDescription="@string/todoswexz">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fgth4"
+                        android:text="@string/_0123lzxc"
+                        android:layout_toEndOf="@id/fgth4">
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#939292"
+                    android:layout_marginTop="2dp">
+                </View>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginTop="3dp"
+                    app:tint="#E91E63"
+                    android:contentDescription="@string/todocvasd">
+                </ImageView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fgth5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/medal"
+                    android:contentDescription="@string/todosa">
+                </ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/man2"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#E91E63"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/johncrhvm"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/fgth6"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/diamond"
+                        app:tint="#FFEB3B"
+                        android:contentDescription="@string/todoswexz">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/fgth6"
+                        android:text="@string/_0123lzxc"
+                        android:layout_toEndOf="@id/fgth6">
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#939292"
+                    android:layout_marginTop="2dp">
+                </View>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_marginTop="3dp"
+                    app:tint="#E91E63"
+                    android:contentDescription="@string/todocvasd">
+                </ImageView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgth7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E91E63"
+        android:layout_below="@+id/fgth"
+        android:layout_marginTop="10dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fgth8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fgth7"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:text="@string/_4"
+                android:layout_marginStart="15dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fgth9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raj"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fgth10"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fgth10"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fgth10"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgth11"
+        android:layout_below="@+id/fgth8"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EA2769">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fgth12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fgth11"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:text="@string/_5slpert"
+                android:layout_marginStart="15dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fgth13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priyaczi"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fgth14"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fgth14"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fgth14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgth15"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E91E63"
+        android:layout_below="@+id/fgth12"
+        android:layout_marginTop="8dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fgth16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fgth15"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:text="@string/_6klouesxc"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fgth17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/johncmks"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fgth18"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fgth18"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fgth18"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#E91E63"
+                android:layout_marginStart="30dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_net"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/todoloprx">
+                </ImageView>
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/liveslpa"
+                    android:layout_marginEnd="10dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgth19"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E91E63"
+        android:layout_below="@+id/fgth16"
+        android:layout_marginTop="8dp">
+    </View>
+
+    <TextView
+        android:id="@+id/fgth20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/fgth19"
+        android:text="@string/you_sent_no_gifts_this_hour"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+
+
+
+
+
+
+</RelativeLayout>

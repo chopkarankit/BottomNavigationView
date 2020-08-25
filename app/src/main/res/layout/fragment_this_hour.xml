@@ -1,14 +1,678 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ThisHourFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/fth"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/this_hour_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/fth1"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fth3"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="#EA6490">
+                
+                <ImageView
+                    android:id="@+id/fth2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_cdv"
+                    android:contentDescription="@string/todofhyrtg"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x2"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginStart="40dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_1"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fth4"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="13dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#EA6490"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_cdv"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/todoseudhgf">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x1wq"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_2"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="#EA6490"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_cdv"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/todothreopsj">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x1lourt"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_marginStart="40dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_3"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fth5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/fth"
+        android:text="@string/about_rulesd"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp">
+    </TextView>
+
+    <View
+        android:id="@+id/fth6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EA6490"
+        android:layout_below="@id/fth5"
+        android:layout_marginTop="10dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fth7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fth6"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raj"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth9"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth9"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+            
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fth10"
+        android:layout_below="@+id/fth7"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EA2769">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fth11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fth10"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man3"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priyabcx"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth13"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth13"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth13"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fth14"
+        android:layout_below="@+id/fth11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fth15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fth14"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/johncsrthbvc"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth17"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth17"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fth18"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fth15"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fth19"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fth18"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/count_down"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_00_00_00"
+            android:textColor="#000">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fth20"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fth19"
+        android:layout_marginTop="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/diamond"
+            app:tint="#FFFF00"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:contentDescription="@string/todokir">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0lop"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rank"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp">
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fth18"
+        android:layout_toRightOf="@+id/fth19"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/fth19"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_gift"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="90dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/sw">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rewards"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -4,327 +4,254 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ThisWeekFragment">
+    tools:context=".Last7DaysFragment">
 
     <LinearLayout
-        android:id="@+id/ftw"
-        android:layout_width="match_parent"
+        android:id="@+id/fl"
+        android:layout_width="200dp"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         tools:ignore="UselessParent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/fl4"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="@string/rewardsw"
-            android:textColor="#000">
-        </TextView>
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fl1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="#E91E63">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/crown"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todoslpabr"
+                    app:tint="#ffffff">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="#ED6C98"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/fl1"
+                android:layout_toEndOf="@id/fl1"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_top_4_10"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="8dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fl2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="#E91E63">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/crown"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todoslpabr"
+                    app:tint="#ffffff">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="#ED6C98"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/fl2"
+                android:layout_toEndOf="@id/fl2"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_top_2_3kls"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="8dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fl3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="#E91E63">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/crown"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todoslpabr"
+                    app:tint="#ffffff">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="13dp"
+                app:cardBackgroundColor="#ED6C98"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/fl3"
+                android:layout_toEndOf="@id/fl3"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_top_1am"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="8dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="150dp"
+        app:tint="#B6B4B4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:contentDescription="@string/todokscr">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/fl6"
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="135dp"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp">
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/coin"
-            android:layout_marginLeft="4dp"
-            android:layout_marginStart="4dp"
-            android:contentDescription="@string/todoskiyre">
+            android:id="@+id/fl5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/award"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:contentDescription="@string/todoskop">
         </ImageView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_01234al"
-            android:textColor="#000"
-            android:layout_marginLeft="4dp"
-            android:layout_marginStart="4dp">
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fl5"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:text="@string/no_1abv">
         </TextView>
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_uparrow"
-            android:layout_marginLeft="4dp"
-            android:layout_marginStart="4dp"
-            android:contentDescription="@string/todowloiuy">
-        </ImageView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ftw1"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="7dp"
-        android:layout_below="@id/ftw">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#E85E8D">
-
-            <ImageView
-                android:id="@+id/ftw2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                app:tint="#F49404"
-                android:contentDescription="@string/todocione">
-            </ImageView>
-
-            <RelativeLayout
-                android:id="@+id/ftw3"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/ftw4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_0123saw"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/ftw4"
-                    android:text="@string/no_1_20"
-                    android:textColor="#ffffff">
-                </TextView>
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_uparrow"
-                android:layout_marginRight="40dp"
-                android:layout_marginEnd="40dp"
-                app:tint="#ffffff"
-                android:contentDescription="@string/lods">
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#E85E8D"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                app:tint="#F49404"
-                android:contentDescription="@string/todocione">
-            </ImageView>
-
-            <RelativeLayout
-                android:id="@+id/ftw5"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/ftw6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_4567dcs"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/ftw6"
-                    android:text="@string/no_2_15"
-                    android:textColor="#ffffff">
-                </TextView>
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_uparrow"
-                android:layout_marginRight="40dp"
-                android:layout_marginEnd="40dp"
-                app:tint="#ffffff"
-                android:contentDescription="@string/lods">
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ftw7"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="7dp"
-        android:layout_below="@id/ftw1">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#E85E8D">
-
-            <ImageView
-                android:id="@+id/ftw8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                app:tint="#F49404"
-                android:contentDescription="@string/todocione">
-            </ImageView>
-
-            <RelativeLayout
-                android:id="@+id/ftw9"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/ftw10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_0123saw"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/ftw10"
-                    android:text="@string/no_1_20"
-                    android:textColor="#ffffff">
-                </TextView>
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_uparrow"
-                android:layout_marginRight="40dp"
-                android:layout_marginEnd="40dp"
-                app:tint="#ffffff"
-                android:contentDescription="@string/lods">
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#E85E8D"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                app:tint="#F49404"
-                android:contentDescription="@string/todocione">
-            </ImageView>
-
-            <RelativeLayout
-                android:id="@+id/ftw11"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/ftw12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_4567dcs"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/ftw12"
-                    android:text="@string/no_2_15"
-                    android:textColor="#ffffff">
-                </TextView>
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_uparrow"
-                android:layout_marginRight="40dp"
-                android:layout_marginEnd="40dp"
-                app:tint="#ffffff"
-                android:contentDescription="@string/lods">
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
-        android:id="@+id/ftw13"
+        android:id="@+id/fl7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_below="@id/ftw7"
+        android:layout_below="@id/fl6"
         android:text="@string/about_rulesd"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:textSize="15sp">
     </TextView>
 
     <TextView
-        android:id="@+id/ftw14"
+        android:id="@+id/fl8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ftw13"
+        android:layout_below="@+id/fl7"
         android:text="@string/weekly_ranking_is_updated_at_24_00_every_friday"
         android:gravity="center">
     </TextView>
 
+    <View
+        android:id="@+id/fl9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E84A80"
+        android:layout_below="@id/fl8"
+        android:layout_marginTop="7dp">
+    </View>
+
     <LinearLayout
-        android:id="@+id/ftw15"
+        android:id="@+id/fl10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/ftw14"
+        android:layout_below="@id/fl9"
         android:layout_marginTop="3dp">
 
         <LinearLayout
@@ -373,7 +300,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/ftw16"
+                android:id="@+id/fl11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/raj"
@@ -387,7 +314,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ftw17"
+                    android:id="@+id/fl12"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/diamond"
@@ -399,9 +326,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/ftw17"
+                    android:layout_toRightOf="@+id/fl12"
                     android:text="@string/_0123"
-                    android:layout_toEndOf="@+id/ftw17"
+                    android:layout_toEndOf="@+id/fl12"
                     android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp">
                 </TextView>
@@ -430,8 +357,8 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/ftw18"
-        android:layout_below="@+id/ftw15"
+        android:id="@+id/fl13"
+        android:layout_below="@+id/fl10"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -439,11 +366,11 @@
     </View>
 
     <LinearLayout
-        android:id="@+id/ftw19"
+        android:id="@+id/fl14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/ftw18"
+        android:layout_below="@id/fl13"
         android:layout_marginTop="3dp">
 
         <LinearLayout
@@ -492,7 +419,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/ftw20"
+                android:id="@+id/fl15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/priyabcx"
@@ -506,7 +433,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ftw21"
+                    android:id="@+id/fl16"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/diamond"
@@ -518,9 +445,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/ftw21"
+                    android:layout_toRightOf="@+id/fl16"
                     android:text="@string/_0123"
-                    android:layout_toEndOf="@+id/ftw21"
+                    android:layout_toEndOf="@+id/fl16"
                     android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp">
                 </TextView>
@@ -549,20 +476,20 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/ftw22"
-        android:layout_below="@+id/ftw19"
+        android:id="@+id/fl17"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:background="#E8729A"
         android:layout_marginTop="8dp"
-        android:background="#E91E63">
+        android:layout_below="@id/fl14">
     </View>
 
     <LinearLayout
-        android:id="@+id/ftw23"
+        android:id="@+id/fl18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/ftw22"
+        android:layout_below="@id/fl17"
         android:layout_marginTop="3dp">
 
         <LinearLayout
@@ -611,7 +538,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/ftw24"
+                android:id="@+id/fl19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/johncsrthbvc"
@@ -625,7 +552,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ftw25"
+                    android:id="@+id/fl20"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/diamond"
@@ -637,9 +564,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/ftw25"
+                    android:layout_toRightOf="@+id/fl20"
                     android:text="@string/_0123"
-                    android:layout_toEndOf="@+id/ftw25"
+                    android:layout_toEndOf="@+id/fl20"
                     android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp">
                 </TextView>
@@ -668,19 +595,19 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/ftw26"
+        android:id="@+id/fl21"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/ftw23"
-        android:layout_marginTop="8dp"
-        android:background="#E91E63">
+        android:background="#E36791"
+        android:layout_below="@id/fl18"
+        android:layout_marginTop="8dp">
     </View>
 
     <LinearLayout
-        android:id="@+id/ftw27"
+        android:id="@+id/fl22"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ftw26"
+        android:layout_below="@+id/fl21"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -702,11 +629,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ftw28"
+        android:id="@+id/fl23"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/ftw27"
+        android:layout_below="@+id/fl22"
         android:layout_marginTop="10dp"
         tools:ignore="UseCompoundDrawables">
 
@@ -764,11 +691,11 @@
     <RelativeLayout
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/ftw26"
-        android:layout_toRightOf="@+id/ftw28"
+        android:layout_below="@+id/fl21"
+        android:layout_toRightOf="@+id/fl23"
         android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
-        android:layout_toEndOf="@+id/ftw28"
+        android:layout_toEndOf="@+id/fl23"
         android:layout_alignParentEnd="true">
 
         <ImageView

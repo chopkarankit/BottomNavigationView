@@ -5,15 +5,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class PagerAdapter2 extends FragmentPagerAdapter {
+public class PagerAdapter3 extends FragmentPagerAdapter {
 
-    private int NumOfTabs2;
+    private int NumOfTabs3;
 
-
-    public PagerAdapter2 (FragmentManager fmmm, int NumOfTabs2)
+    public PagerAdapter3(FragmentManager fmr, int NumOfTabs3)
     {
-        super(fmmm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        this.NumOfTabs2 = NumOfTabs2;
+        super(fmr,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        this.NumOfTabs3 = NumOfTabs3;
     }
 
     @NonNull
@@ -23,11 +22,11 @@ public class PagerAdapter2 extends FragmentPagerAdapter {
         switch (position)
         {
             case 0:
-                return new ThisHourFragment();
+                return new GThisHourFragment();
             case 1:
-                return new TodayFragment();
+                return new Last24HoursFragment();
             case 2:
-                return new ThisWeekFragment();
+                return new Last7DaysFragment();
             default:
                 return null;
         }
@@ -35,6 +34,6 @@ public class PagerAdapter2 extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return NumOfTabs2;
+        return NumOfTabs3;
     }
 }

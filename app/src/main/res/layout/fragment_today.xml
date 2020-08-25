@@ -1,15 +1,823 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TodayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/ftd1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/todayfragment"
-        android:textSize="20sp"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rewardsw"
+            android:textColor="#000"
+            android:layout_marginTop="3dp">
+        </TextView>
+        
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/coin"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/todoskiyre">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_01234al"
+            android:textColor="#000"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_uparrow"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/todowloiuy">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ftd2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/ftd1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#E85E8D">
+
+            <ImageView
+                android:id="@+id/ftd5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                app:tint="#F49404"
+                android:contentDescription="@string/todocione">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ftd4"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ftd6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0123saw"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ftd6"
+                    android:text="@string/no_1_20"
+                    android:textColor="#ffffff">
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_uparrow"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                app:tint="#ffffff"
+                android:contentDescription="@string/lods">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#E85E8D"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                app:tint="#F49404"
+                android:contentDescription="@string/todocione">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ftd7"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ftd8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_4567dcs"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ftd8"
+                    android:text="@string/no_2_15"
+                    android:textColor="#ffffff">
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_uparrow"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                app:tint="#ffffff"
+                android:contentDescription="@string/lods">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ftd3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/ftd2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#E85E8D">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                app:tint="#F49404"
+                android:contentDescription="@string/todocione">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ftd9"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/ftd10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_8901cxz"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ftd10"
+                    android:text="@string/no_3_5_10"
+                    android:textColor="#ffffff">
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_uparrow"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                app:tint="#ffffff"
+                android:contentDescription="@string/lods">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#E85E8D"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                app:tint="#F49404"
+                android:contentDescription="@string/todocione">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ftd11"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/ftd12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2345kdgf"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ftd12"
+                    android:text="@string/no_6_12_5"
+                    android:textColor="#ffffff">
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_uparrow"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                app:tint="#ffffff"
+                android:contentDescription="@string/lods">
+            </ImageView>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ftd13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/ftd3"
+        android:text="@string/about_rulesd"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp">
+    </TextView>
+
+    <View
+        android:id="@+id/ftd14"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EA6490"
+        android:layout_below="@id/ftd13"
+        android:layout_marginTop="10dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/ftd15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ftd14"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raj"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth9"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth9"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ftd16"
+        android:layout_below="@+id/ftd15"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EA2769">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/ftd17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ftd16"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man3"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priyabcx"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth13"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth13"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth13"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ftd18"
+        android:layout_below="@+id/ftd17"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/ftd19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ftd18"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/medal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todomdl1">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/man2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EA4C80">
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fth16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/johncsrthbvc"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fth17"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/diamond"
+                    app:tint="#FFFF00"
+                    android:layout_marginTop="3dp"
+                    android:contentDescription="@string/tododgueb">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fth17"
+                    android:text="@string/_0123"
+                    android:layout_toEndOf="@+id/fth17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                app:tint="#ED3372"
+                android:contentDescription="@string/todom">
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ftd20"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ftd19"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/ftd21"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ftd20"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/count_down"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_00_00_00"
+            android:textColor="#000">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ftd22"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ftd21"
+        android:layout_marginTop="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/diamond"
+            app:tint="#FFFF00"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:contentDescription="@string/todokir">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0lop"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            tools:ignore="TooManyViews">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rank"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp">
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ftd20"
+        android:layout_toRightOf="@+id/ftd22"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/ftd22"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_gift"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="90dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/sw">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rewards"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

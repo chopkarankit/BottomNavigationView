@@ -10,7 +10,7 @@ public class PagerAdapter1 extends FragmentPagerAdapter {
     private int numOfTabs1;
 
     public PagerAdapter1 (FragmentManager fmm, int numOfTabs1){
-        super(fmm);
+        super(fmm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
 
         this.numOfTabs1 = numOfTabs1;
     }

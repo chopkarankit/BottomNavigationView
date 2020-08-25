@@ -3,18 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BeansGotFragment">
 
     <LinearLayout
         android:id="@+id/fb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/fb1"
             android:layout_weight="1"
             android:layout_width="0dp"
+            app:tabIndicatorColor="#E91E63"
             android:layout_height="wrap_content">
 
             <com.google.android.material.tabs.TabItem
